@@ -97,7 +97,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = ['/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/',
                     '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/static/',
                     '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/templates/',
-                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/media/']
+                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/media/',
+                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/img/']
                     
 
 MEDIA_ROOT = os.getenv("MEDIA_ROOT", os.path.join(BASE_DIR, 'media'))
