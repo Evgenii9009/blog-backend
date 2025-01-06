@@ -8,11 +8,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 COMPANY_COORDINATES = [55.751244, 37.618423]
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", [])
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
-SECRET_KEY = env.str("SECRET_KEY", "REPLACE_ME")
+SECRET_KEY = env.str("SECRET_KEY")
 
-DEBUG = env.bool("DEBUG", True)
+DEBUG = env.bool("DEBUG")
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -92,9 +92,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = os.getenv('STATIC_URL', '/static/')
+STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"), )
+STATICFILES_DIRS = ['/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/',
+                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/static/',
+                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/templates/']
 
 MEDIA_ROOT = os.getenv("MEDIA_ROOT", os.path.join(BASE_DIR, 'media'))
 
