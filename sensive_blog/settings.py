@@ -94,18 +94,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = ['/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/',
-                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/static/',
-                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/templates/',
-                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/media/',
-                    '/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/img/']
+STATICFILES_DIRS = ['/home/eugene/DEVMAN_TASKS/DjangoLib/blog-backend/']
                     
 
 MEDIA_ROOT = os.getenv("MEDIA_ROOT", os.path.join(BASE_DIR, 'media'))
 
 STATIC_ROOT = os.getenv("STATIC_ROOT")
 
-MEDIA_URL = os.getenv('MEDIA_URL', '/media/')
+MEDIA_URL = '/media/'
 
 INTERNAL_IPS = [
     '127.0.0.1',
